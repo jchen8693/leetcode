@@ -1,0 +1,4 @@
+
+Select Distinct l1.Num as ConsecutiveNums 
+From Logs as l1, Logs as l2, logs as l3
+Where l1.Num=l2.Num and l2.Num=l3.Num and l1.Id+2=l2.Id+1 and l2.Id+1=l3.Id
