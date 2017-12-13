@@ -1,0 +1,3 @@
+select a.Name as "Employee"
+from Employee as a, Employee as b
+where a. ManagerID = b. id and a.salary > b. salary
