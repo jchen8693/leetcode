@@ -1,0 +1,6 @@
+SELECT
+  Score,
+  (SELECT count(*) FROM (SELECT distinct Score FROM Scores) s2 WHERE s2.Score >= Scores.Score) Rank
+FROM Scores
+ORDER BY Score desc
+ 
